@@ -1,0 +1,172 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-image: url(zwG8tL8.jpg);
+        text-align: center;
+    }
+    .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  
+   .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        padding: 20px;
+    }
+    .gallery img {
+        width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 50px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .modal-content img {
+        width: 100%;
+        height: auto;
+    }
+    .close {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col"><div class="mt-4 p-5 bg-primary text-white rounded">
+                <H1 style="color: rgb(32, 65, 211);">MotoGallery</H1></h1>    
+            </div></div>
+        </div>
+    </div>
+    <body>
+        <div class="container">
+            <div class="col"><div class="mt-2 p-3 bg-primary text-white rounded">
+                <h1 style="background-color: brown;"><h1 style="color: rgb(211, 40, 18);">Honda Motors</h1>
+                <p style="color: aliceblue;">Honda Motorcycles is the world’s largest motorcycle manufacturer and has led the way in the advancement of motorcycle engineering and technology.</p>
+            </div>
+            <div class="gallery">
+                <img src="honda-cb650r-yoko.jpg" class="img-thumbnail" alt="honda-cb650r-yoko" onclick="openModal('honda-cb650r-yoko.jpg')">
+                <img src="honda_crf-1000l.jpg" class="img-thumbnail" alt="honda_crf-1000l" onclick="openModal('honda_crf-1000l.jpg')">
+                <img src="honda-cbr1100xx-super-blackbird.jpg" class="img-thumbnail" alt="honda-cbr1100xx-super-blackbird" onclick="openModal('honda-cbr1100xx-super-blackbird.jpg')">
+                <img src="the-first-honda-rc213v-s-.jpg" class="img-thumbnail" alt="the-first-honda-rc213v-s-" onclick="openModal('the-first-honda-rc213v-s-.jpg')">  
+                <img src="2021-honda-cbr150r.jpg" class="img-thumbnail" alt="2021-honda-cbr150r" onclick="openModal('2021-honda-cbr150r.jpg')">
+                <img src="NR750.jpg" class="img-thumbnail"  alt="NR750" onclick="openModal('NR750.jpg')">
+                <img src="1990-Honda-CBR250RR-MC22-side.webp" class="img-thumbnail" alt="1990-Honda-CBR250RR-MC22-side" onclick="openModal('1990-Honda-CBR250RR-MC22-side.webp')">
+                <img src="post12623.jpg" class="rounded-circle" alt="post12623" onclick="openModal('post12623.jpg')">
+                <img src="cbr enduro.jpg" class="mx-auto d-block" onclick="openModal('cbr enduro.jpg')">
+                <img src="cbr1000rr fireblade.webp" class="mx-auto d-block" onclick="openModal('cbr1000rr.jpg')">
+                <img src="IMG_0371a.webp" class="img-thumbnail"  alt="IMG_0371a" onclick="openModal('IMG_0371a.webp')">
+                <img src="honda-cb1000r-2024-street-fighter-2.webp" class="img-thumbnail" alt="honda-cb1000r-2024-street-fighter-2" onclick="openModal('honda-cb1000r-2024-street-fighter-2.webp')">
+               
+        </div>
+
+        <div class="container">
+            <div class="col"><div class="mt-2 p-3 bg-primary text-white rounded">
+                <h1 style="color: blue;">Yamaha Motors</h1>
+                <p style="color: aliceblue;">one of Japan’s leading motorcycle manufacturers</p>
+            <div class="gallery">
+                <img src="R1.jpg" class="img-thumbnail" alt="R1" onclick="openModal('r1.jpg')">
+                <img src="R1m.jpg" class="img-thumbnail" alt="R1m" onclick="openModal('r1m.jpg')"> 
+                <img src="r6.jpg" class="img-thumbnail" alt="r6" onclick="openModal('r6.jpg')">
+                <img src="R9.png" class="img-thumbnail" alt="R9" onclick="openModal('R9.png')">
+                <img src="r3.webp" class="img-thumbnail" alt="r3" onclick="openModal('r3.webp')">
+                <img src="XSR900.jpg" class="img-thumbnail" alt="XSR900" onclick="openModal('XSR900.jpg')">
+                <img src="mt03.webp" class="img-thumbnail" alt="mt03" onclick="openModal('mt03.webp')">
+                <img src="mt10.jpg" class="img-thumbnail" alt="mt10" onclick="openModal('mt10.jpg')">
+                <img src="mt09 sp.webp" class="img-thumbnail" alt="mt09" onclick="openModal('mt09 sp.webp')">
+                <img src="mt15.jpg" class="img-thumbnail" alt="mt15" onclick="openModal('mt15.jpg')">
+                <img src="r1-gytr.jpg" class="img-thumbnail" alt="r1-gytr" onclick="openModal('r1-gytr.jpg')">
+                
+            </div>
+            <div class="container">
+                <div class="col"><div class="mt-2 p-3 bg-primary text-white rounded">
+                    <h1 style="color: rgb(204, 211, 204);">Suzuki Motors</h1>
+                    <p style="color: rgb(185, 185, 185);">Japan’s third largest manufacturer of motorcycles.</p>
+                </div>
+            <div class="gallery">
+                <img src="gsxr1000r.jpg" class="img-thumbnail" alt="gsxr1000r" onclick="openModal('gsxr1000r.jpg')">
+                <img src="gsxr1000rr.jpg" class="img-thumbnail" alt="gsxr1000rr" onclick="openModal('gsxr1000rr.jpg')">
+                <img src="Gsxr250.jpg" class="img-thumbnail" alt="Gsxr250" onclick="openModal('Gsxr300.jpg')">
+                <img src="Gsxr300.jpg" class="img-thumbnail" alt="Gsxr300" onclick="openModal('Hayabusa.jpg')">
+                <img src="The Hayabusa Gen1.jpg" class="img-thumbnail" alt="Hayabusa" onclick="openModal('')">
+                <img src="gsx 8r.jpg" class="img-thumbnail" alt="gsx 8r" onclick="openModal('gsx 8r.jpg')">
+                <img src="gsx 8s.jpg" class="img-thumbnail" alt="gsx 8s" onclick="openModal('gsx 8s.jpg')">
+                <img src="gsx-s1000r.jpg" class="img-thumbnail" alt="gsx-s1000r" onclick="openModal('gsx-s1000r')">
+                <img src="gsxr1000 motogp.jpg" class="img-thumbnail" alt="gsxr1000" onclick="openModal('gsxr1000 motogp.jpg')">
+                <img src="gsxr750.avif" class="img-thumbnail" alt="gsxr750" onclick="openModal('gsxr750.avif')">
+                <img src="Hayabusa Gen3.jpg" class="img-thumbnail" alt="" onclick="openModal('Hayabusa Gen3.jpg')">
+               
+
+            </div>    
+
+                </div>
+            </div>    
+
+            
+            </div></div>
+        </div>
+        
+
+       </div>
+
+       <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <img id="modal-image" src="" alt="Modal Image">
+        </div>
+    </div>
+        <script>
+            function openModal(imageSrc) {
+                document.getElementById("myModal").style.display = "block";
+                document.getElementById("modal-image").src = imageSrc;
+            }
+        
+            function closeModal() {
+                document.getElementById("myModal").style.display = "none";
+            }
+        </script>
+    </body>
+    
+    
+</body>
+</html>
